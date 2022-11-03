@@ -76,7 +76,8 @@ header{
 }
 
 .content h2{
-    background-color: var(--dark-background-1);
+    background-color: var(--accent-2);
+    color: var(--accent-3);
 
     text-align: center;
 }
