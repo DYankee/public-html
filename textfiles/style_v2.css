@@ -1,0 +1,41 @@
+:root{
+    font-size: 16px;
+    --text-primary: #c0c5ce;
+    --bg-primary: #343d46;
+}
+
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+sr-only{
+    
+}
+
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    background: steelblue;
+}
+
+@media (max-width: 35em){
+    .primary-navigation{
+        --gap: 2em;
+
+        position: fixed;
+        inset: 0 0 0 70%;
+
+        flex-direction: column;
+        padding: 5em 1em;
+
+    }
+}
+
+.primary-header{
+    align-items: center;
+    justify-content: space-between;
+}

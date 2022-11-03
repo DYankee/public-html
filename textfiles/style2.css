@@ -1,0 +1,25 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.primary-nav ul{
+    list-style: none;
+    margin: 0%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: blanchedalmond;
+}
+
+.primary-nav li:not(:last-child){
+    padding-right: 1rem;
+}
+
+.primary-nav a{
+    display: block;
+}
+
+article{
+    margin-top: 500px;
+}

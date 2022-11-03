@@ -1,0 +1,33 @@
+body{
+	background-color: #a7d6d5;
+	color: #000000;
+	font-family: Tahoma, Helevetica, sans-serif;
+	font-size: 16px;
+}
+
+h1{
+	text-align: center;
+	font-size: 30px;
+}
+
+p span{
+	font-weight: bold
+}
+
+hr{
+	width: 50%; 
+	height: 10px;
+	color: #ff0000;
+}
+
+h2{
+	font-size:24px; color:#ff0000;
+}
+
+ul{
+	list-style-type: square;
+}
+
+.color-span{
+	color: #008080
+}
