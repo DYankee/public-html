@@ -21,17 +21,19 @@ body{
     flex-direction: column;
 }
 
-header{
-    height: 200px;
-    background-image: url("../img/Optimized-Dota-2-by-Valve.jpg");
+/* Nav styling */
+header {
+    background-image: url("../img/dota2_banner.jpg");
+    height: 500px;
+    background-size: auto;
+    background-position: center;
 }
 
-/* Nav styling */
 .navbar{
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--accent-2);
+    /* background-color: var(--accent-2); */
 }
 
 .navbar-links{
@@ -40,12 +42,12 @@ header{
 }
 
 .nav-item{
-    background-color: var(--accent-2);
+    background-color: #25040890;
 
     padding: 1rem;
 }
 .nav-item:hover{
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
     color: var(--light-text);
 }
 
@@ -55,20 +57,22 @@ header{
 }
 
 .active{
-    background-color: var(--accent-3);
+    background-color: var(--accent-2);
 }
 
 .active a{
-    color: var(--accent-1);
+    color: var(--light-text);
 }
 
 /* Main content */
 .content{
     display: grid;
     grid-template-columns: 2fr 1fr;
+
+    border-top: 1rem solid #250408;
 }
 
-.content article:nth-child(odd){
+.content article{
     display: flex;
     flex-direction: column;
 
