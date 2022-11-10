@@ -36,8 +36,9 @@ tr, td, th{
 
 body{
     background-color: var(--light-background-1);
-    display: flex;
-    flex-direction: column;
+    min-height: 100%;
+    display: grid;
+    padding-bottom: 10vh;
 }
 
 /* Nav styling */
@@ -61,8 +62,6 @@ header {
 
 .nav-item{
     background-color: #25040890;
-
-    padding: 1rem;
 }
 .nav-item:hover{
     background-color: var(--accent-2);
@@ -72,6 +71,10 @@ header {
 .nav-item a{
     color: var(--light-text);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 .active{
@@ -89,26 +92,78 @@ header {
     flex-direction: column;
 }
 
-.content h2{
+h1{
     background-color: var(--accent-2);
-    color: var(--accent-3);
+    color: var(--light-text);
 
-    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+
+    padding: 1rem;
 }
 
-#Gameplay div{
-    border: 2px solid var(--accent-2);
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+#Introduction{
+    text-align: center;
+    background-color: var(--light-background-1);
+}
+
+p{
+    padding: 1rem;
+}
+
+#Gameplay h2{
+    background-color: var(--accent-2);
+    color: var(--light-text);
+
+    text-align: center;
     padding: .5rem;
 }
 
+
+#Gameplay div{
+    border: 5px solid var(--accent-2);
+    border-collapse: collapse;
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(400px,4fr)); */
+    grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 500px){
+    #Gameplay div{
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .navbar-links{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .nav-item a{
+        justify-content: left;
+    }
+
+
+}
+
+
 #Gameplay article{
-    border: 2px solid var(--accent-2);
+    border: 5px solid var(--accent-1);
 }
 
 #Gameplay h3{
     text-align: center;
+    background-color: #8C7A6B;
+    padding: .5rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-self: center;
+    border: 3px solid var(--accent-1);
 }
 
 /* Footer */
@@ -121,7 +176,12 @@ footer{
     bottom: 0;
 }
 
+footer p{
+    padding: 0;
+}
+
 footer a{
     color: var(--light-text);
     text-decoration: wavy;
 }
+
