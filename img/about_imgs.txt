@@ -1,3 +1,0 @@
-1. Optimized-Dota-2-by-Valve.jpg
-SRC = https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.esports.com%2Fen%2Fhow-to-get-started-in-dota-2-100769&psig=AOvVaw2lSih7USwu_wWcOMy7bHrT&ust=1667419767537000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJD8tenkjfsCFQAAAAAdAAAAABAD
-resolution = 1200 x 433
