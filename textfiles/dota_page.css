@@ -24,7 +24,7 @@
 
 table{
     width: fit-content;
-    border: 2px solid var(--accent-1);
+    border: 5px solid var(--accent-1);
     border-collapse: collapse;
 }
 
@@ -35,7 +35,7 @@ tr, td, th{
 }
 
 body{
-    background-color: var(--light-background-1);
+    background-color: var(--accent-2);
     min-height: 100%;
     display: grid;
     padding-bottom: 10vh;
@@ -95,9 +95,10 @@ header {
 h1{
     background-color: var(--accent-2);
     color: var(--light-text);
+    border-bottom: 3px solid var(--accent-1);
 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     padding: 1rem;
 }
@@ -105,33 +106,45 @@ h1{
 #Introduction{
     text-align: center;
     background-color: var(--light-background-1);
+    border: 5px solid var(--accent-1);
+}
+
+#Introduction p{
+    font-size: 1.5rem;
 }
 
 p{
     padding: 1rem;
 }
 
-#Gameplay h2{
+#Gameplay{
+    background-color: var(--accent-2);
+}
+
+h2{
     background-color: var(--accent-2);
     color: var(--light-text);
+    border-inline: 5px solid var(--accent-1);
 
+    font-size: 2rem;
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 
 #Gameplay div{
-    border: 5px solid var(--accent-2);
+    background-color: var(--light-background-1);
+    
     border-collapse: collapse;
     display: grid;
 
     /* grid-template-columns: repeat(auto-fit, minmax(400px,4fr)); */
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1000px){
     #Gameplay div{
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: 1fr;
     }
 
     .navbar-links{
@@ -152,10 +165,17 @@ p{
     border: 5px solid var(--accent-1);
 }
 
-#Gameplay h3{
+h3{
     text-align: center;
     background-color: #8C7A6B;
     padding: .5rem;
+
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--accent-1);
+}
+
+#Gameplay p{
+    font-size: 1.5rem;
 }
 
 img{
@@ -163,7 +183,21 @@ img{
     height: auto;
     position: relative;
     align-self: center;
-    border: 3px solid var(--accent-1);
+    border: 5px solid var(--accent-1);
+}
+
+#Favorite-Hero{
+    background-color: var(--light-background-1);
+    border: 5px solid var(--accent-1);
+    border-collapse: collapse;
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(400px,4fr)); */
+    grid-template-columns: 2fr 2fr;
+}
+
+#Favorite-Hero p{
+    font-size: 1.5rem;
 }
 
 /* Footer */
