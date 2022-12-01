@@ -1,11 +1,12 @@
 :root {
-    --light-text: #D9CAB3;
-    --dark-text: #8C7A6B;
-    --light-background-1: #D9CAB3;
-    --dark-background-1: #8C7A6B;
-    --accent-1: #250408;
+    --light-text: #BBB5AC;
+    --dark-text: #23201B;
+    --light-background-1: #BBB5AC;
+    --dark-background-1: #23201B;
+    --accent-1: #4F3632;
     --accent-2: #5E0B15;
-    --accent-3: #F6E27F;
+    --accent-3: #39498C;
+    --accent-4: #D16014;
 }
 
 * {
@@ -16,8 +17,8 @@
 
 
 /* Header css*/
-
 header{
+    display: flex;
     background-image: url("../img/AI-Banner.png");
     height: 400px;
     background-size: auto;
@@ -35,6 +36,44 @@ nav ul{
     list-style: none;
 }
 
-p{
+nav li{
+    background-color: #000000;
+}
 
-}   
+nav a{
+    color: var(--light-text);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .active{
+    background-color: var(--accent-3);
+}
+
+header h2{
+    position: relative;
+    bottom: 1rem;
+    background-color: #10101080;
+}
+
+/* Footer css */
+footer{
+    color: var(--light-text);
+    background-color: var(--accent-3);
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    padding: 0;
+}
+
+footer a{
+    color: var(--light-text);
+    text-decoration: wavy;
+}
