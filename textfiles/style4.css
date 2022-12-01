@@ -1,0 +1,40 @@
+:root {
+    --light-text: #D9CAB3;
+    --dark-text: #8C7A6B;
+    --light-background-1: #D9CAB3;
+    --dark-background-1: #8C7A6B;
+    --accent-1: #250408;
+    --accent-2: #5E0B15;
+    --accent-3: #F6E27F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header css*/
+
+header{
+    background-image: url("../img/AI-Banner.png");
+    height: 400px;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+p{
+
+}   
