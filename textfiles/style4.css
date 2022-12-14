@@ -122,6 +122,7 @@ div h3{
     color: var(--light-text);
     background-color: var(--dark-background-1);
 
+    padding: .5rem;
     width: 100%;
     text-align: center;
 }
@@ -134,7 +135,10 @@ padding-bottom: 10px;
 }
 
 @media (max-width: 1000px){
-    .art{grid-template-columns: repeat(2,1fr)}
+    .art{
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 0px;
+    }
 
     #Gallery{
         padding: 0%;
@@ -142,7 +146,9 @@ padding-bottom: 10px;
 }
 
 @media (max-width: 500px){
-    .art{grid-template-columns: repeat(1,1fr)}
+    .art{
+        grid-template-columns: repeat(1,1fr);
+    }
 
     #Gallery{
         padding: 0%;
