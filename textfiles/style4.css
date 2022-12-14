@@ -20,7 +20,7 @@
 header{
     display: flex;
     background-image: url("../img/AI-Banner.png");
-    height: 400px;
+    height: 375px;
     background-size: auto;
     background-position: center;
     position: relative;
@@ -54,26 +54,127 @@ nav .active{
 }
 
 header h2{
-    position: relative;
-    bottom: 1rem;
-    background-color: #10101080;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+
+    color: var(--light-text);
+    background-color: #00000075;
 }
+
+
+/* body css*/
+.padding{
+    padding: 1rem;
+}
+
+body{
+    background-color: var(--light-background-1);
+    display: grid;
+
+    padding-bottom: 5rem;
+}
+
+article{
+    display: grid;
+}
+
+article h1{
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+
+    background-color: black;
+    color: var(--light-text);
+}
+
+article p{
+    padding: .5rem;
+}
+
+article img{
+    height: 1rem;
+}
+
+#Aaron{
+width: fit-content;
+height: auto;
+}
+
+
+/* gallery css*/
+
+#Gallery_Intro p{
+    width: 100%;
+    text-align: center;
+}
+
+#Gallery{
+    display: grid;
+    grid-template-rows:1fr;
+    padding: 1rem;
+}
+
+
+div h3{
+    color: var(--light-text);
+    background-color: var(--dark-background-1);
+
+    width: 100%;
+    text-align: center;
+}
+
+
+.art{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+padding-bottom: 10px;
+}
+
+@media (max-width: 1000px){
+    .art{grid-template-columns: repeat(2,1fr)}
+
+    #Gallery{
+        padding: 0%;
+    }
+}
+
+@media (max-width: 500px){
+    .art{grid-template-columns: repeat(1,1fr)}
+
+    #Gallery{
+        padding: 0%;
+    }
+}
+
+
+.art img{
+    width: 100%;
+    height: auto;
+
+    border: .5rem solid #000000;
+}
+
 
 /* Footer css */
 footer{
     color: var(--light-text);
-    background-color: var(--accent-3);
+    background-color: var(--dark-background-1);
 
     width: 100%;
     position: fixed;
     bottom: 0;
 }
 
-footer p{
-    padding: 0;
-}
-
 footer a{
     color: var(--light-text);
     text-decoration: wavy;
+}
+
+.copyright{
+position: absolute;
+bottom: 0;
+right: 10px;
 }
